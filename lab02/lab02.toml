@@ -44,7 +44,7 @@ Asm: 1
 rubric = 5
 
 [[tests]]
-name = "05"
+name = "06"
 input = ["./min", "2", "-1"]
 expected = """
 C: -1
