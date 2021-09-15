@@ -60,3 +60,12 @@ C: False
 Asm: False
 """
 rubric = 1
+
+[[tests]]
+name = "is_pal-cs315cs"
+input = ["./is_pal_rec", "x"]
+expected = """
+C: True
+Asm: True
+"""
+rubric = 1
