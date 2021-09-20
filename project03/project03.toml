@@ -1,36 +1,36 @@
 [[tests]]
-name = "get_bit_1"
-input = ["./get_bit", "64", "0"]
+name = "get_bitseq_1"
+input = ["./get_bitseq", "94116", "12", "15"]
 expected = """
-C: 0
-Asm: 0
+C: 6
+Asm: 6
 """
 rubric = 10
 
 [[tests]]
-name = "get_bit_2"
-input = ["./get_bit", "64", "6"]
+name = "get_bitseq_2"
+input = ["./get_bitseq", "94117", "4", "7"]
 expected = """
-C: 1
-Asm: 1
+C: 10
+Asm: 10
 """
 rubric = 10
 
 [[tests]]
-name = "count_ones_1"
-input = ["./count_ones", "7"]
+name = "get_bitseq_signed_1"
+input = ["./get_bitseq_signed", "94117", "12", "15"]
 expected = """
-C: 3
-Asm: 3
+C: 6
+Asm: 6
 """
 rubric = 10
 
 [[tests]]
-name = "count_ones_2"
-input = ["./count_ones", "4294967295"]
+name = "get_bitseq_signed_2"
+input = ["./get_bitseq_signed", "94117", "4", "7"]
 expected = """
-C: 32
-Asm: 32
+C: -6
+Asm: -6
 """
 rubric = 10
 
