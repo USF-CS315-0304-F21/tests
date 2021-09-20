@@ -1,0 +1,63 @@
+[[tests]]
+name = "get_bit_1"
+input = ["./get_bit", "64", "0"]
+expected = """
+C: 0
+Asm: 0
+"""
+rubric = 10
+
+[[tests]]
+name = "get_bit_2"
+input = ["./get_bit", "64", "6"]
+expected = """
+C: 1
+Asm: 1
+"""
+rubric = 10
+
+[[tests]]
+name = "count_ones_1"
+input = ["./count_ones", "7"]
+expected = """
+C: 3
+Asm: 3
+"""
+rubric = 10
+
+[[tests]]
+name = "count_ones_2"
+input = ["./count_ones", "4294967295"]
+expected = """
+C: 32
+Asm: 32
+"""
+rubric = 10
+
+[[tests]]
+name = "search_st_1"
+input = ["./search_st", "102", "1", "101", "102"]
+expected = """
+C: 101 102
+Asm: 101 102
+"""
+rubric = 10
+
+[[tests]]
+name = "search_st_2"
+input = ["./search_st", "202", "3", "101", "102", "201", "202", "301", "302"]
+expected = """
+C: 201 202
+Asm: 201 202
+"""
+rubric = 10
+
+[[tests]]
+name = "search_st_3"
+input = ["./search_st", "402", "3", "101", "102", "201", "202", "301", "302"]
+expected = """
+C: Not found
+Asm: Not found
+"""
+rubric = 10
+
