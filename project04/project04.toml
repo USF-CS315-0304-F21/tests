@@ -1,14 +1,4 @@
 [[tests]]
-name = "get_bitseq"
-input = ["./$project", "get_bitseq", "94116", "12", "15"]
-expected = """
-C: 6
-Asm: 6
-Emu: 6
-"""
-rubric = 6
-
-[[tests]]
 name = "fib_rec"
 input = ["./$project", "fib_rec", "10"]
 expected = """
@@ -16,7 +6,17 @@ C: 55
 Asm: 55
 Emu: 55
 """
-rubric = 6
+rubric = 5
+
+[[tests]]
+name = "get_bitseq"
+input = ["./$project", "get_bitseq", "94116", "12", "15"]
+expected = """
+C: 6
+Asm: 6
+Emu: 6
+"""
+rubric = 5
 
 [[tests]]
 name = "is_pal"
@@ -26,7 +26,7 @@ C: is a palindrome
 Asm: is a palindrome
 Emu: is a palindrome
 """
-rubric = 6
+rubric = 5
 
 [[tests]]
 name = "max3"
@@ -36,7 +36,7 @@ C: 10
 Asm: 10
 Emu: 10
 """
-rubric = 6
+rubric = 5
 
 [[tests]]
 name = "merge_sort"
@@ -46,7 +46,7 @@ C: 1 2 3 4 5 6
 Asm: 1 2 3 4 5 6
 Emu: 1 2 3 4 5 6
 """
-rubric = 15
+rubric = 13
 
 [[tests]]
 name = "midpoint"
@@ -56,7 +56,7 @@ C: 2
 Asm: 2
 Emu: 2
 """
-rubric = 14
+rubric = 5
 
 [[tests]]
 name = "quadratic"
@@ -66,7 +66,7 @@ C: 36
 Asm: 36
 Emu: 36
 """
-rubric = 6
+rubric = 4
 
 [[tests]]
 name = "sort"
@@ -76,7 +76,7 @@ C: 6 5 4 3 2 1
 Asm: 6 5 4 3 2 1
 Emu: 6 5 4 3 2 1
 """
-rubric = 15
+rubric = 13
 
 [[tests]]
 name = "to_upper"
@@ -86,6 +86,6 @@ C: FOOBAR
 Asm: FOOBAR
 Emu: FOOBAR
 """
-rubric = 6
+rubric = 5
 
 
