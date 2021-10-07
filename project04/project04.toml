@@ -88,4 +88,100 @@ Emu: FOOBAR
 """
 rubric = 5
 
+[[tests]]
+name = "quadratic_analysis"
+input = ["./$project", "-a", "quadratic", "2", "4", "6", "8"]
+expected = """
+C: 36
+Asm: 36
+Emu: 36
+=== Analysis
+I_count       = 6
+DP_count      = 5 (83.33%)
+SDT_count     = 0 (0.00%)
+B_count       = 1 (16.67%)
+B_taken       = 1 (100.00%)
+B_not_taken   = 0 (0.00%)
+"""
+rubric = 4
 
+[[tests]]
+name = "fib_analysis"
+input = ["./$project", "-a", "fib_rec", "10"]
+expected = """
+C: 55
+Asm: 55
+Emu: 55
+=== Analysis
+I_count       = 2119
+DP_count      = 883 (41.67%)
+SDT_count     = 706 (33.32%)
+B_count       = 530 (25.01%)
+B_taken       = 442 (83.40%)
+B_not_taken   = 88 (16.60%)
+"""
+rubric = 4
+
+[[tests]]
+name = "fib_dm_8"
+input = ["./$project", "-dm", "8", "fib_rec", "10"]
+expected = """
+C: 55
+Asm: 55
+Emu: 55
+=== Cache
+Type          = direct mapped
+Size          = 8 slots
+References    = 2119
+Hits          = 941 (44.41% hit ratio)
+Misses        = 1178 (55.59% miss ratio)
+Misses (cold) = 8
+Misses (hot)  = 1170
+% Used        = 100.00%
+"""
+rubric = 4
+
+[[tests]]
+name = "to_upper_sa_16"
+input = ["./$project", "-sa", "16", "to_upper", "foobar"]
+expected = """
+C: FOOBAR
+Asm: FOOBAR
+Emu: FOOBAR
+=== Cache
+Type          = 4-way set associative
+Size          = 16 slots
+References    = 71
+Hits          = 58 (81.69% hit ratio)
+Misses        = 13 (18.31% miss ratio)
+Misses (cold) = 13
+Misses (hot)  = 0
+% Used        = 81.25%
+"""
+rubric = 4
+
+[[tests]]
+name = "is_pal_analysis_sa_32"
+input = ["./$project", "-a", "-sa", "32", "is_pal", "able was i ere i saw elba"]
+expected = """
+C: is a palindrome
+Asm: is a palindrome
+Emu: is a palindrome
+=== Analysis
+I_count       = 189
+DP_count      = 76 (40.21%)
+SDT_count     = 50 (26.46%)
+B_count       = 63 (33.33%)
+B_taken       = 39 (61.90%)
+B_not_taken   = 24 (38.10%)
+=== Cache
+Type          = 4-way set associative
+Size          = 32 slots
+References    = 189
+Hits          = 172 (91.01% hit ratio)
+Misses        = 17 (8.99% miss ratio)
+Misses (cold) = 17
+Misses (hot)  = 0
+% Used        = 53.12%
+"""
+rubric = 4
