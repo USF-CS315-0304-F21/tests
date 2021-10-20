@@ -21,7 +21,7 @@ expected = """
 rubric = 1
 
 [[tests]]
-name = "1-bit-full-adder"
+name = "8-bit-ripple-carry-adder"
 input = ["java", "-cp", "$digital", "CLI", "test", "8-bit-ripple-carry-adder.dig", "-tests", "$project_tests/8brca_test.dig"]
 expected = """
 8brca_test: passed
