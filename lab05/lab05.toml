@@ -1,0 +1,14 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+
+[[tests]]
+name = "max2"
+input = ["java", "-cp", "$digital", "CLI", "test", "max2.dig", "-tests", "$project_tests/max2_test.dig"]
+expected = """
+max2_test: passed
+"""
+rubric = 1
