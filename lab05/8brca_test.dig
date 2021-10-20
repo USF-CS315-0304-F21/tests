@@ -8,27 +8,20 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>max2_test</string>
+          <string>8brca_test</string>
         </entry>
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>a1 a0 b1 b0 r1 r0
-0  0  0  0  0  0
-0  0  0  1  0  1
-0  0  1  0  1  0
-0  0  1  1  1  1
-0  1  0  0  0  1
-0  1  0  1  0  1
-0  1  1  0  1  0
-0  1  1  1  1  1
-1  0  0  0  1  0
-1  0  0  1  1  0
-1  0  1  0  1  0</dataString>
+            <dataString>a   b   sum cout
+0   0   0   0
+8   8   16  0
+128 127 255 0
+255 1   0   1</dataString>
           </testData>
         </entry>
       </elementAttributes>
-      <pos x="220" y="160"/>
+      <pos x="260" y="220"/>
     </visualElement>
   </visualElements>
   <wires/>
