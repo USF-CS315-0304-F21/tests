@@ -18,7 +18,7 @@
 while (!(DONE))
 0 C 0 x x x x x x x x
 end while
-0 0 x 7 6 0 2 2 0 1 18
+0 0 x 7 6 0 2 1 0 1 17
 </dataString>
           </testData>
         </entry>
