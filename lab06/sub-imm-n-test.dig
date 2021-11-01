@@ -8,19 +8,16 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>sub-reg-test</string>
+          <string>sub-imm-n-test</string>
         </entry>
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>CLK CLR RR0 RR1 WR WE ALUOp ALUSrcB Imm R0
-0   1   0   0   0  1  0     1       1   x
-0   0   0   0   0  1  0     1       1   x
-1   0   0   0   0  1  0     1       1   1
-0   0   0   0   0  1  0     0       0   x
-1   0   0   0   0  1  0     0       0   2
-0   0   0   0   0  1  1     1       1   x
-1   0   0   0   0  1  1     1       1   1
+            <dataString>CLK CLR RR0 RR1 WR WE ALUOp ALUSrcB Imm R0         N Z
+0   1   0   0   0  1  1     1       1   x          x x
+0   0   0   0   0  1  1     1       1   x          x x
+1   0   0   0   0  1  1     1       1   0xFFFFFFFF 1 0
+
 </dataString>
           </testData>
         </entry>

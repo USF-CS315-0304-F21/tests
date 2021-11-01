@@ -8,17 +8,19 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>add-reg-test</string>
+          <string>cumulative-test</string>
         </entry>
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>CLK CLR RR0 RR1 WR WE ALUOp ALUSrcB Imm R0
-0   1   0   0   0  1  0     1       1   x
-0   0   0   0   0  1  0     1       1   x
-1   0   0   0   0  1  0     1       1   1
-0   0   0   0   0  1  0     0       0   x
-1   0   0   0   0  1  0     0       0   2</dataString>
+            <dataString>CLK CLR RR0 RR1 WR WE ALUOp ALUSrcB Imm R0 R1 N Z
+0   1   0   0   0  1  3     1       1   x  x  x x
+0   0   0   0   0  1  3     1       1   x  x  x x
+1   0   0   0   0  1  3     1       1   1  x  x x
+0   0   0   0   1  1  3     1       1   x  x  x x
+1   0   0   0   1  1  3     1       1   x  1  x x
+0   0   0   1   0  1  1     0       0   x  x  x 1
+</dataString>
           </testData>
         </entry>
       </elementAttributes>
