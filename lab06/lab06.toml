@@ -1,0 +1,29 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "add-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/add-imm-test.dig"]
+expected = """
+add-imm-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "add-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/add-reg-test.dig"]
+expected = """
+add-reg-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "sub-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/sub-reg-test.dig"]
+expected = """
+sub-reg-test: passed
+"""
+rubric = 1
