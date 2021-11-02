@@ -37,7 +37,7 @@ cumulative-test: passed
 rubric = 1
 
 [[tests]]
-name = "alu_z"
+name = "alu-z"
 input = ["java", "-cp", "$digital", "CLI", "test", "alu.dig", "-tests", "$project_tests/alu-z-test.dig"]
 expected = """
 alu-z-test: passed
@@ -45,7 +45,7 @@ alu-z-test: passed
 rubric = 1
 
 [[tests]]
-name = "alu_n"
+name = "alu-n"
 input = ["java", "-cp", "$digital", "CLI", "test", "alu.dig", "-tests", "$project_tests/alu-n-test.dig"]
 expected = """
 alu-n-test: passed
