@@ -8,21 +8,18 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>sub-imm-n-test</string>
+          <string>alu-n-test</string>
         </entry>
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>CLK CLR RR0 RR1 WR WE ALUOp ALUSrcB Imm R0         N Z
-0   1   0   0   0  1  1     1       1   x          x x
-0   0   0   0   0  1  1     1       1   x          x x
-1   0   0   0   0  1  1     1       1   0xFFFFFFFF 1 0
-
-</dataString>
+            <dataString>A B ALUOp N
+1 2 1     1
+1 0 1     0</dataString>
           </testData>
         </entry>
       </elementAttributes>
-      <pos x="120" y="60"/>
+      <pos x="80" y="100"/>
     </visualElement>
   </visualElements>
   <wires/>

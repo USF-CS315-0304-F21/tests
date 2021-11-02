@@ -21,10 +21,10 @@ mov-imm-test: passed
 rubric = 1
 
 [[tests]]
-name = "sub-imm-n"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/sub-imm-n-test.dig"]
+name = "sub-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/sub-imm-test.dig"]
 expected = """
-sub-imm-n-test: passed
+sub-imm-test: passed
 """
 rubric = 1
 
@@ -33,5 +33,21 @@ name = "cumulative"
 input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/cumulative-test.dig"]
 expected = """
 cumulative-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "alu_z"
+input = ["java", "-cp", "$digital", "CLI", "test", "alu.dig", "-tests", "$project_tests/alu-z-test.dig"]
+expected = """
+alu-z-test: passed
+"""
+rubric = 1
+
+[[tests]]
+name = "alu_n"
+input = ["java", "-cp", "$digital", "CLI", "test", "alu.dig", "-tests", "$project_tests/alu-n-test.dig"]
+expected = """
+alu-n-test: passed
 """
 rubric = 1
