@@ -36,4 +36,76 @@ dp-lsr-reg-test: passed
 """
 rubric = 2
 
+[[tests]]
+name = "dp-asr-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-asr-imm-test.dig"]
+expected = """
+dp-asr-imm-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "mem-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mem-reg-test.dig"]
+expected = """
+mem-reg-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "mem-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mem-imm-test.dig"]
+expected = """
+mem-imm-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "mem-shift-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mem-shift-reg-test.dig"]
+expected = """
+mem-shift-reg-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "blbx"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/blbx-test.dig"]
+expected = """
+blbx-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "b"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/b-test.dig"]
+expected = """
+b-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "beq"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/beq-test.dig"]
+expected = """
+beq-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "ble"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/ble-test.dig"]
+expected = """
+ble-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "bgt"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/bgt-test.dig"]
+expected = """
+bgt-test: passed
+"""
+rubric = 2
+
 
