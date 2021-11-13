@@ -1,0 +1,39 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "dp-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-reg-test.dig"]
+expected = """
+dp-reg-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "dp-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-imm-test.dig"]
+expected = """
+dp-imm-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "dp-lsl-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-lsl-imm-test.dig"]
+expected = """
+dp-lsl-imm-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "dp-lsr-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-lsr-reg-test.dig"]
+expected = """
+dp-lsr-reg-test: passed
+"""
+rubric = 2
+
+
