@@ -108,4 +108,20 @@ bgt-test: passed
 """
 rubric = 2
 
+[[tests]]
+name = "mul"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mul-test.dig"]
+expected = """
+mul-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "rsb"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/rsb-test.dig"]
+expected = """
+rsb-test: passed
+"""
+rubric = 2
+
 

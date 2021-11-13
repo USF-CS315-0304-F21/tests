@@ -17,9 +17,9 @@
 1   0   x    x
 0   0   x    x
 while (!(DONE))
-0   C   9    x
+0   C   11    x
 end while
-0   0   9    1</dataString>
+0   0   11    1</dataString>
           </testData>
         </entry>
       </elementAttributes>
