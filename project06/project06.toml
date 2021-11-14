@@ -124,4 +124,20 @@ rsb-test: passed
 """
 rubric = 2
 
+[[tests]]
+name = "quadratic"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/quadratic-test.dig"]
+expected = """
+quadratic-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "get_bitseq"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/get-bitseq-test.dig"]
+expected = """
+get-bitseq-test: passed
+"""
+rubric = 2
+
 
