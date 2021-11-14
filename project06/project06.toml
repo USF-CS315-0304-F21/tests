@@ -140,4 +140,20 @@ get-bitseq-test: passed
 """
 rubric = 2
 
+[[tests]]
+name = "max3"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/max3-test.dig"]
+expected = """
+max3-test: passed
+"""
+rubric = 2
+
+[[tests]]
+name = "fib-rec"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/fib-rec-test.dig"]
+expected = """
+fib-rec-test: passed
+"""
+rubric = 2
+
 
