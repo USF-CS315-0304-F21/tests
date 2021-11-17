@@ -19,7 +19,7 @@
 while (!(DONE))
 0   C   16    x
 end while
-0   0   16    255</dataString>
+0   0   16    5</dataString>
           </testData>
         </entry>
       </elementAttributes>
