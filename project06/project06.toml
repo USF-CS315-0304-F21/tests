@@ -5,155 +5,153 @@ Use default settings!
 """
 
 [[tests]]
-name = "dp-reg"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-reg-test.dig"]
+name = "00-dp-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/00-dp-reg-test.dig"]
 expected = """
-dp-reg-test: passed
+00-dp-reg-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "dp-imm"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-imm-test.dig"]
+name = "01-dp-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/01-dp-imm-test.dig"]
 expected = """
-dp-imm-test: passed
+01-dp-imm-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "dp-lsl-imm"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-lsl-imm-test.dig"]
+name = "02-dp-lsl-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/02-dp-lsl-imm-test.dig"]
 expected = """
-dp-lsl-imm-test: passed
+02-dp-lsl-imm-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "dp-lsr-reg"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-lsr-reg-test.dig"]
+name = "03-dp-lsr-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/03-dp-lsr-reg-test.dig"]
 expected = """
-dp-lsr-reg-test: passed
+03-dp-lsr-reg-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "dp-asr-imm"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/dp-asr-imm-test.dig"]
+name = "04-dp-asr-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/04-dp-asr-imm-test.dig"]
 expected = """
-dp-asr-imm-test: passed
+04-dp-asr-imm-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "mem-reg"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mem-reg-test.dig"]
+name = "05-mem-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/05-mem-reg-test.dig"]
 expected = """
-mem-reg-test: passed
+05-mem-reg-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "mem-imm"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mem-imm-test.dig"]
+name = "06-mem-imm"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/06-mem-imm-test.dig"]
 expected = """
-mem-imm-test: passed
+06-mem-imm-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "mem-shift-reg"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mem-shift-reg-test.dig"]
+name = "07-mem-shift-reg"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/07-mem-shift-reg-test.dig"]
 expected = """
-mem-shift-reg-test: passed
+07-mem-shift-reg-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "blbx"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/blbx-test.dig"]
+name = "08-blbx"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/08-blbx-test.dig"]
 expected = """
-blbx-test: passed
+08-blbx-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "b"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/b-test.dig"]
+name = "09-b"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/09-b-test.dig"]
 expected = """
-b-test: passed
+09-b-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "beq"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/beq-test.dig"]
+name = "10-beq"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/10-beq-test.dig"]
 expected = """
-beq-test: passed
+10-beq-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "ble"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/ble-test.dig"]
+name = "11-ble"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/11-ble-test.dig"]
 expected = """
-ble-test: passed
+11-ble-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "bgt"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/bgt-test.dig"]
+name = "12-bgt"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/12-bgt-test.dig"]
 expected = """
-bgt-test: passed
+12-bgt-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "mul"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/mul-test.dig"]
+name = "13-mul"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/13-mul-test.dig"]
 expected = """
-mul-test: passed
+13-mul-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "rsb"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/rsb-test.dig"]
+name = "14-rsb"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/14-rsb-test.dig"]
 expected = """
-rsb-test: passed
+14-rsb-test: passed
 """
 rubric = 2
 
 [[tests]]
-name = "quadratic"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/quadratic-test.dig"]
+name = "15-quadratic"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/15-quadratic-test.dig"]
 expected = """
-quadratic-test: passed
+15-quadratic-test: passed
 """
-rubric = 2
+rubric = 4
 
 [[tests]]
-name = "get_bitseq"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/get-bitseq-test.dig"]
+name = "16-get_bitseq"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/16-get-bitseq-test.dig"]
 expected = """
-get-bitseq-test: passed
+16-get-bitseq-test: passed
 """
-rubric = 2
+rubric = 4
 
 [[tests]]
-name = "max3"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/max3-test.dig"]
+name = "17-max3"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/17-max3-test.dig"]
 expected = """
-max3-test: passed
+17-max3-test: passed
 """
-rubric = 2
+rubric = 4
 
 [[tests]]
-name = "fib-rec"
-input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/fib-rec-test.dig"]
+name = "18-fib-rec"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$project_tests/18-fib-rec-test.dig"]
 expected = """
-fib-rec-test: passed
+18-fib-rec-test: passed
 """
-rubric = 2
-
-
+rubric = 4
