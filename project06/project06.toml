@@ -130,7 +130,7 @@ input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$p
 expected = """
 15-quadratic-test: passed
 """
-rubric = 4
+rubric = 5
 
 [[tests]]
 name = "16-get_bitseq"
@@ -138,7 +138,7 @@ input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$p
 expected = """
 16-get-bitseq-test: passed
 """
-rubric = 4
+rubric = 5
 
 [[tests]]
 name = "17-max3"
@@ -146,7 +146,7 @@ input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$p
 expected = """
 17-max3-test: passed
 """
-rubric = 4
+rubric = 5
 
 [[tests]]
 name = "18-fib-rec"
@@ -154,4 +154,4 @@ input = ["java", "-cp", "$digital", "CLI", "test", "$project.dig", "-tests", "$p
 expected = """
 18-fib-rec-test: passed
 """
-rubric = 4
+rubric = 5

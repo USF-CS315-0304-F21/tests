@@ -8,7 +8,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>get-bitseq-test</string>
+          <string>16-get-bitseq-test</string>
         </entry>
         <entry>
           <string>Testdata</string>
