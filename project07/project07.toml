@@ -1,0 +1,38 @@
+[project]
+build = "none"
+strip_output = """
+Use default settings!
+"""
+
+[[tests]]
+name = "00-dp-3nop"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project_part1.dig", "-tests", "$project_tests/00-dp-3nop-test.dig"]
+expected = """
+00-dp-3nop-test: passed
+"""
+rubric = 80
+
+[[tests]]
+name = "01-dp-2nop"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project_part2.dig", "-tests", "$project_tests/01-dp-2nop-test.dig"]
+expected = """
+01-dp-2nop-test: passed
+"""
+rubric = 10
+
+[[tests]]
+name = "02-blbx"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project_part3.dig", "-tests", "$project_tests/02-blbx-test.dig"]
+expected = """
+02-blbx-test: passed
+"""
+rubric = 5
+
+[[tests]]
+name = "03-ldr"
+input = ["java", "-cp", "$digital", "CLI", "test", "$project_part4.dig", "-tests", "$project_tests/03-ldr-test.dig"]
+expected = """
+03-ldr-test: passed
+"""
+rubric = 5
+
